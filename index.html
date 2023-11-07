@@ -6,26 +6,258 @@
     <title>PG Law - Home</title>
     <!-- tailwind css CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              darkblue: "#0A3C5E",
-            },
-          },
-        },
-      };
-    </script>
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- custom CSS -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
-    <!-- navbar -->
+    <!-- header -->
+    <header>
+      <!-- navbar section start here  -->
+      <div class="secondary_nav">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 py-2"
+        >
+          <div>
+            <span class="text-white mr-3 pr-3 border-r border-darkblue-500"
+              ><i class="fa-solid mr-1 fa-clock"></i> Mon - Fri: 09:00 -
+              05:00</span
+            >
+            <span class="text-white"
+              ><i class="fa-solid mr-1 fa-envelope"></i>
+              perry@perrygrimaldi.com</span
+            >
+          </div>
+          <div>
+            <span class="text-white"
+              ><i class="fa-solid mr-1 fa-location-dot"></i> 53 West Jackson
+              BlvdSuite 315Chicago, IL 60604</span
+            >
+          </div>
+        </div>
+      </div>
+      <nav class="bg-white w-full z-20 top-0 left-0 border-b border-gray-200">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto columns-3"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex navlinks flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 rounded hover:text-darkblue md:p-0"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-gray-900 hover:text-darkblue rounded md:p-0"
+                  >Result</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-gray-900 hover:text-darkblue rounded md:p-0"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-gray-900 hover:text-darkblue rounded md:p-0"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-gray-900 hover:text-darkblue rounded md:p-0"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- logo -->
+          <a href="#" class="flex items-center siteLogo">
+            <img src="assets/logo.png" class="h-8 mr-3" alt="Logo" />
+            <!-- <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >Flowbite</span
+            > -->
+          </a>
+
+          <div class="flex items-center">
+            <span class="text-darkblue mr-3 uppercase font-medium"
+              >Call Us Today:</span
+            >
+            <button
+              type="button"
+              class="text-white bg-darkblue hover:bg-blue- focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-4 py-2 text-center mr-3 md:mr-0"
+            >
+              <i class="fa-solid fa-phone-volume mr-2"></i>
+              312.388.0808
+            </button>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar section end here  -->
+
+      <!-- header content -->
+      <div class="max-w-screen-xl text-center mx-auto hero_content py-48">
+        <span class="text-white secondary_heading"
+          ><i class="fa-solid fa-scale-balanced"></i> Justice Hub</span
+        >
+        <h1 class="text-white mb-6">
+          <span class="block">Advocates for Justice and </span>
+          <strong><i>Legal Excellence</i></strong>
+        </h1>
+        <p class="text-white w-2/4 mx-auto">
+          Our mission is to serve as trusted allies, navigating the complexities
+          of law with precision, integrity, and a passion for achieving justice.
+          Count on us to stand by your side and deliver exceptional legal
+          representation.
+        </p>
+        <div class="btns flex items-center justify-center mt-10">
+          <button
+            type="button"
+            class="text-white mx-3 border-2 border-darkblue bg-darkblue hover:bg-blue- focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-6 py-4 text-center"
+          >
+            Get Free Legal Advice
+          </button>
+          <button
+            class="text-white border-2 border-white mx-3 hover:bg-blue- focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-8 py-4 text-center"
+          >
+            View Practice Area
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Records -->
+    <div id="OurRecord" class="py-28 bg-white">
+      <div class="max-w-screen-xl mx-auto">
+        <div class="btns flex items-center justify-center">
+          <button
+            type="button"
+            class="text-white mx-3 border-2 border-darkblue bg-darkblue hover:bg-blue- focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-12 py-4 text-center"
+          >
+            Personal Injury
+          </button>
+          <button
+            class="btnGrey border-2 text-darkblue mx-3 hover:bg-blue- focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-8 py-4 text-center"
+          >
+            Criminal Defense
+          </button>
+        </div>
+        <div class="records_content mt-16 flex justify-between items-center">
+          <div class="record_box">
+            <h2>$4.2 Million</h2>
+            <p>Truck Accident</p>
+          </div>
+          <div class="record_box">
+            <h2>$4.2 Million</h2>
+            <p>Truck Accident</p>
+          </div>
+          <div class="record_box">
+            <h2>$4.2 Million</h2>
+            <p>Truck Accident</p>
+          </div>
+          <div class="record_box">
+            <h2>$4.2 Million</h2>
+            <p>Truck Accident</p>
+          </div>
+        </div>
+        <p class="mt-12 text-center text-sm italic text-slate-400">
+          *Please note that outcomes can vary based on the unique facts and
+          legal circumstances of each case.
+        </p>
+      </div>
+    </div>
+
+    <!-- about us section -->
+    <div id="aboutUs" class="pt-24">
+      <div class="max-w-screen-xl mx-auto">
+        <div class="columns-2 items-center justify-between">
+          <div class="md:pr-12">
+            <img src="assets/person.png" alt="person" />
+          </div>
+          <div class="aboutUsText md:pl-12 pt-8 md:pt-24">
+            <span class="text-white secondary_heading"
+              ><i class="fa-solid fa-scale-balanced"></i> Justice Hub</span
+            >
+            <h2 class="text-white section_heading my-4">
+              Unveiling Perry Grimaldi's Legal Journey
+            </h2>
+            <p class="text-white section_para mb-4">
+              From humble beginnings to becoming a pillar in the legal sphere,
+              this narrative chronicles our unwavering dedication to justice,
+              integrity, and client advocacy. Explore the milestones, challenges
+              conquered, and the ethos that shapes our approach to law. With
+              each case, Perry Grimaldi Law continues to carve a legacy founded
+              on trust, proficiency, and a relentless pursuit of fairness. Join
+              us on this immersive journey through our legal evolution.
+            </p>
+            <p class="text-white section_para mb-4">
+              Unwavering expertise, and an unyielding commitment to our clients
+              have shaped our enduring legacy. Explore the milestones, values,
+              and vision that define our journey in the world of law.
+            </p>
+            <button
+              type="button"
+              class="text-white border-2 border-darkblue bg-darkblue hover:bg-blue- focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-6 py-4 text-center"
+            >
+              Learn More About Perry Grimaldi
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- custom JS -->
     <script src="js/main.js"></script>
+    <script src="js/tailwind.config.js"></script>
   </body>
 </html>
