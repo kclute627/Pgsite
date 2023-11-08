@@ -49,6 +49,149 @@
   src: url("font/Futura-Md-BT-Font/FutuBd.ttf") format("truetype");
 }
 
+/* Css for pause button */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes triangleStroke {
+  from {
+    stroke-dashoffset: 90;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes smallScale {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.containerr {
+  position: absolute;
+  right: 27%;
+  top: 75%;
+  z-index: 9999999;
+  transform: translateY(180%);
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+}
+
+.button.is-play {
+  /* background-color: #fff; */
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.button.is-play .button-outer-circle {
+  background: hsla(204, 81%, 20%, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.button.is-play .button-icon {
+  position: absolute;
+  top: 82%;
+  left: 52%;
+  width: 30px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+}
+
+.button.is-play .button-icon .triangle {
+  animation: fadeIn 7s ease;
+}
+
+.button.is-play .button-icon .path {
+  stroke-dasharray: 90;
+  stroke-dashoffset: 0;
+  animation: triangleStroke 3s;
+  animation-timing-function: ease;
+}
+
+.has-scale-animation {
+  animation: smallScale 3s infinite;
+}
+
+.has-delay-short {
+  animation-delay: 0.5s;
+}
+
+/* swiper  */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+.swiper-pagination {
+  text-align: left;
+  padding-left: 30px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #0a3c5e !important;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  transform: scale(1.2);
+}
+
+/* Css for pause button end here */
+
 /* font end here */
 
 /* Global css start here */
@@ -145,3 +288,51 @@ header {
   background-image: url(../assets/about-us.png);
   background-size: cover;
 }
+
+/* services section start from here */
+#services {
+  background-image: url(../assets/services_bg.png);
+  background-size: cover;
+}
+
+/* consultation start from here */
+#consultation {
+  background-image: url(../assets/consultation.png);
+  background-size: cover;
+}
+
+/* client stories section start from here */
+
+#testimoial {
+  background-image: url(../assets/feedback_bg.png);
+}
+
+.feedback_content {
+  /* position: absolute;
+  bottom: 7%;
+  background: #fff;
+  width: 39%; */
+  background-color: #fff;
+  box-shadow: 0px 10px 40px rgba(10, 60, 94, 0.08);
+  transform: translateY(26%);
+  width: 80%;
+  position: relative;
+  z-index: 0;
+}
+
+.feedback_bg img {
+  position: absolute;
+  max-width: 90%;
+  right: 0;
+  z-index: 99999;
+}
+
+.feedback_content q {
+  line-height: 30px;
+}
+
+.feedback_content_inner {
+  width: 50%;
+}
+
+/* client stories end here */
