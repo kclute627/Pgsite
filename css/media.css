@@ -1,0 +1,59 @@
+@media (max-width: 768px) {
+  .hero_content h1 {
+    font-size: 32px;
+  }
+  .record_box {
+    width: 50%;
+    padding: 0 10px !important;
+  }
+
+  .record_box h2 {
+    font-size: 22px;
+  }
+
+  .section_heading {
+    font-size: 26px;
+    line-height: normal;
+  }
+
+  .max-w-screen-xl {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .case_types {
+    transform: translateY(0);
+  }
+
+  #consultation {
+    background-image: url(../assets/service_mobile.png);
+  }
+
+  .feedback_content_inner {
+    width: 100%;
+  }
+
+  .feedback_content {
+    width: 100%;
+  }
+  .feedback_bg img {
+    position: relative;
+    max-width: 100%;
+  }
+
+  .feedback_content {
+    transform: translateY(0);
+  }
+  .containerr {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 9999999;
+    transform: translate(-50%, -50%);
+  }
+
+  #actnow {
+    background-image: url(../assets/acknow-mobile.png);
+    transform: translateY(-5%);
+  }
+}

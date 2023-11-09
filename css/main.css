@@ -49,6 +49,16 @@
   src: url("font/Futura-Md-BT-Font/FutuBd.ttf") format("truetype");
 }
 
+/* heading */
+h1,
+h2,
+h3,
+h4,
+h4,
+h5 {
+  font-family: "FuturaMediumBT", sans-serif;
+}
+
 /* Css for pause button */
 
 @keyframes fadeIn {
@@ -295,6 +305,32 @@ header {
   background-size: cover;
 }
 
+.case_types {
+  transform: translateY(20%);
+}
+
+.case_text {
+  background-color: #0a3c5ea4;
+  height: 45%;
+  position: absolute;
+  overflow: hidden;
+  bottom: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.case_card:hover .case_text {
+  height: 100%;
+}
+
+.case_text h3 {
+  font-size: 22px;
+}
+
+.case_card {
+  min-height: 500px;
+}
+
 /* consultation start from here */
 #consultation {
   background-image: url(../assets/consultation.png);
@@ -336,3 +372,19 @@ header {
 }
 
 /* client stories end here */
+
+/* actnow section css start from here */
+
+#actnow {
+  background-image: url(../assets/actnow.png);
+  background-size: cover;
+}
+
+footer {
+  background-image: url(../assets/footer_bg.png);
+  background-size: cover;
+}
+
+.footer_text h2 {
+  font-size: 36px;
+}
