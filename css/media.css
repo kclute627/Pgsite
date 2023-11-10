@@ -1,3 +1,9 @@
+@media (min-width: 1300px) {
+  #actnow {
+    margin-top: -45px;
+  }
+}
+
 @media (max-width: 1400px) {
   .record_box h2 {
     font-size: 22px;
@@ -59,6 +65,7 @@
   .feedback_content {
     transform: translateY(0);
   }
+
   .containerr {
     position: absolute;
     left: 50%;
