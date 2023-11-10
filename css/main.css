@@ -1,54 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap");
 
-/* font start */
-/* Futura Medium Italic */
-@font-face {
-  font-family: "FuturaMediumItalicBT";
-  src: url("font/Futura-Md-BT-Font/FuturaMediumItalicBT.ttf") format("truetype");
-}
-
-/* Futura Medium */
-@font-face {
-  font-family: "FuturaMediumBT";
-  src: url("font/Futura-Md-BT-Font/FuturaMediumBT.ttf") format("truetype");
-}
-
-/* Futura Bold Italic */
-@font-face {
-  font-family: "FuturaBoldItalicBT";
-  src: url("font/Futura-Md-BT-Font/FuturaBoldItalicBT.ttf") format("truetype");
-}
-
-/* Futura Bold */
-@font-face {
-  font-family: "FuturaBoldBT";
-  src: url("font/Futura-Md-BT-Font/FuturaBoldBT.ttf") format("truetype");
-}
-
-/* Futura Medium Italic (alternative) */
-@font-face {
-  font-family: "FutuMdIt";
-  src: url("font/Futura-Md-BT-Font/FutuMdIt.ttf") format("truetype");
-}
-
-/* Futura Medium (alternative) */
-@font-face {
-  font-family: "FutuMd";
-  src: url("font/Futura-Md-BT-Font/FutuMd.ttf") format("truetype");
-}
-
-/* Futura Bold Italic (alternative) */
-@font-face {
-  font-family: "FutuBdIt";
-  src: url("font/Futura-Md-BT-Font/FutuBdIt.ttf") format("truetype");
-}
-
-/* Futura Bold (alternative) */
-@font-face {
-  font-family: "FutuBd";
-  src: url("font/Futura-Md-BT-Font/FutuBd.ttf") format("truetype");
-}
-
 /* heading */
 h1,
 h2,
@@ -197,7 +148,8 @@ h5 {
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  transform: scale(1.2);
+  background-color: transparent !important;
+  transform: scale(1.6);
 }
 
 /* Css for pause button end here */
@@ -249,7 +201,7 @@ header {
   position: absolute;
   height: 106px;
   top: 0;
-  transform: translateX(-52%);
+  transform: translateX(-24%);
 }
 
 .secondary_nav span {
@@ -310,17 +262,20 @@ header {
 }
 
 .case_text {
-  background-color: #0a3c5ea4;
+  background-color: hsla(204, 81%, 20%, 0.9);
   height: 45%;
   position: absolute;
   overflow: hidden;
   bottom: 0;
   transition: 0.3s;
   cursor: pointer;
+  padding-top: 0 !important;
 }
 
 .case_card:hover .case_text {
   height: 100%;
+  padding-top: 20px !important;
+  border-bottom: 2px solid #fff;
 }
 
 .case_text h3 {
@@ -392,3 +347,82 @@ footer p {
 .footer_text h2 {
   font-size: 36px;
 }
+
+.mobile_menu {
+  z-index: 9999999999;
+  transform: translateX(-100%);
+  transition: 0.2s;
+}
+
+.mobile_menu.active {
+  transform: translateX(0%);
+}
+
+.mobile_menu .navlink {
+  border-bottom: 1px solid #f4f4f4;
+  text-transform: uppercase;
+}
+
+.mobile_menu .navlink:hover {
+  background-color: hsla(204, 81%, 20%, 0.2);
+}
+
+#PGLaw-Contact input,
+#PGLaw-Contact textarea {
+  background-color: hsl(0, 0%, 100%, 0.1) !important;
+}
+
+@keyframes countup {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.total_amount {
+  opacity: 0;
+  animation: countup 1.5s forwards;
+}
+
+/* back to top css */
+#button {
+  display: inline-block;
+  background-color: #0a3c5e;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Styles for the content section */

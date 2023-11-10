@@ -1,4 +1,18 @@
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
+  .record_box h2 {
+    font-size: 22px;
+  }
+  .record_box p {
+    font-size: 16px;
+  }
+  .section_heading {
+    line-height: normal;
+  }
+  .hero_content h1 {
+    font-size: 54px;
+  }
+}
+@media (max-width: 1024px) {
   .hero_content h1 {
     font-size: 32px;
   }
@@ -39,6 +53,7 @@
   .feedback_bg img {
     position: relative;
     max-width: 100%;
+    width: 100%;
   }
 
   .feedback_content {
@@ -66,5 +81,8 @@
   footer .links a {
     width: 35%;
     margin-bottom: 8px;
+  }
+  .record_box p {
+    font-size: 14px;
   }
 }

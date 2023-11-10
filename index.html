@@ -23,6 +23,7 @@
     />
 
     <!-- custom CSS -->
+    <link rel="stylesheet" href="css/custom-font.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
   </head>
@@ -30,7 +31,7 @@
     <!-- header -->
     <header>
       <!-- navbar section start here  -->
-      <div class="secondary_nav hidden md:block">
+      <div class="secondary_nav hidden lg:block">
         <div
           class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 py-2"
         >
@@ -53,22 +54,22 @@
         </div>
       </div>
       <nav
-        class="md:bg-white w-full z-20 top-0 left-0 md:border-b border-gray-200"
+        class="lg:bg-white w-full z-20 top-0 left-0 lg:border-b border-gray-200"
       >
         <div
           class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
         >
           <div
-            class="items-center justify-between hidden w-full md:flex md:w-auto columns-3"
+            class="items-center justify-between hidden w-full lg:flex lg:w-auto columns-3"
             id="navbar-sticky"
           >
             <ul
-              class="md:flex hidden navlinks flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white"
+              class="lg:flex hidden navlinks flex-col p-4 lg:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0 lg:bg-white"
             >
               <li>
                 <a
                   href="#"
-                  class="block py-2 pl-3 pr-4 rounded hover:text-darkblue md:p-0"
+                  class="block py-2 pl-3 pr-4 rounded hover:text-darkblue lg:p-0"
                   aria-current="page"
                   >Home</a
                 >
@@ -76,28 +77,28 @@
               <li>
                 <a
                   href="#"
-                  class="block py-2 pl-3 pr-4 text-gray-900 hover:text-darkblue rounded md:p-0"
+                  class="block py-2 pl-3 pr-4 text-gray-900 hover:text-darkblue rounded lg:p-0"
                   >Result</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="block py-2 pl-3 pr-4 text-gray-900 hover:text-darkblue rounded md:p-0"
+                  class="block py-2 pl-3 pr-4 text-gray-900 hover:text-darkblue rounded lg:p-0"
                   >About</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="block py-2 pl-3 pr-4 text-gray-900 hover:text-darkblue rounded md:p-0"
+                  class="block py-2 pl-3 pr-4 text-gray-900 hover:text-darkblue rounded lg:p-0"
                   >Services</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="block py-2 pl-3 pr-4 text-gray-900 hover:text-darkblue rounded md:p-0"
+                  class="block py-2 pl-3 pr-4 text-gray-900 hover:text-darkblue rounded lg:p-0"
                   >Contact</a
                 >
               </li>
@@ -105,12 +106,12 @@
           </div>
 
           <!-- for desktop logo -->
-          <a href="#" class="flex items-center siteLogo hidden md:block">
-            <img src="assets/logo.png" class="h-8 mr-3" alt="Logo" />
+          <a href="#" class="flex items-center siteLogo hidden lg:block">
+            <img src="assets/logo.png" class="h-8" alt="Logo" />
           </a>
 
           <!-- for mobile -->
-          <a href="#" class="flex items-center block md:hidden">
+          <a href="#" class="flex items-center block lg:hidden">
             <img
               src="assets/footer-logo .png"
               style="width: 120px"
@@ -119,49 +120,28 @@
             />
           </a>
 
-          <a href="#" class="bar text-white text-3xl">
+          <a href="#" id="mobileBar" class="bar text-white text-3xl">
             <i class="fa-solid fa-bars"></i>
           </a>
 
-          <div class="items-center hidden md:flex">
+          <div class="items-center hidden lg:flex">
             <span class="text-darkblue mr-3 uppercase font-medium"
               >Call Us Today:</span
             >
             <button
               type="button"
-              class="text-white bg-darkblue hover:bg-blue- font-medium text-sm px-4 py-2 text-center mr-3 md:mr-0"
+              class="text-white bg-darkblue hover:scale-105 transition duration-300 ease-in-out transform hover:scale-105 font-medium text-sm px-4 py-2 text-center mr-3 lg:mr-0"
             >
               <i class="fa-solid fa-phone-volume mr-2"></i>
               312.388.0808
             </button>
-            <button
-              data-collapse-toggle="navbar-sticky"
-              type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
-              aria-controls="navbar-sticky"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="w-5 h-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-            </button>
           </div>
         </div>
       </nav>
-      <div class="secondary_nav_mobile text-center py-3 bg-darkblue">
+      <!-- mobile secondary nav -->
+      <div
+        class="secondary_nav_mobile lg:hidden block text-center py-3 bg-darkblue"
+      >
         <span class="text-white uppercase mr-2">Call Us Today:</span>
         <span class="text-white uppercase"
           ><i class="fa-solid fa-phone-volume mr-2"></i> 312.388.0808</span
@@ -169,32 +149,77 @@
       </div>
       <!-- navbar section end here  -->
 
+      <!-- mobile menu -->
+      <div
+        class="mobile_menu pt-12 absolute top-0 left-0 w-full h-full bg-white"
+      >
+        <div id="closeMobileMenu" class="text-2xl absolute top-4 right-6">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="navLinks">
+          <a href="#" class="navlink font-bold text-sm px-6 block py-3 border-b"
+            >Home</a
+          >
+          <a href="#" class="navlink font-bold text-sm px-6 block py-3 border-b"
+            >Result</a
+          >
+          <a href="#" class="navlink font-bold text-sm px-6 block py-3 border-b"
+            >About</a
+          >
+          <a href="#" class="navlink font-bold text-sm px-6 block py-3 border-b"
+            >Service</a
+          >
+          <a href="#" class="navlink font-bold text-sm px-6 block py-3 border-b"
+            >Contact</a
+          >
+        </div>
+        <div class="mobile_menu_Bottom px-6 absolute bottom-8">
+          <span class="text-darkblue">Call Us Today</span>
+          <h2 class="text-darkblue text-2xl font-bold mb-3">312.388.0808</h2>
+          <span class="block mb-2 font-medium"
+            ><i class="fa-solid text-darkblue mr-1 fa-clock"></i> Mon - Fri:
+            09:00 - 05:00</span
+          >
+          <span class="block mb-2 font-medium"
+            ><i class="fa-solid text-darkblue mr-1 fa-envelope"></i>
+            perry#perrygrimaldi.com</span
+          >
+          <span class="block mb-2 font-medium flex items-start"
+            ><i class="fa-solid mt-1 text-darkblue mr-1 fa-location-dot"></i>
+            <span
+              >53 West Jackson BlvdSuite <br />
+              315Chicago, IL 60604</span
+            ></span
+          >
+        </div>
+      </div>
+
       <!-- header content -->
       <div
-        class="max-w-screen-xl px-4 text-center mx-auto hero_content py-16 md:py-48"
+        class="max-w-screen-xl px-4 text-center mx-auto hero_content py-16 lg:py-24 2xl:py-48"
       >
         <span class="text-white secondary_heading"
           ><i class="fa-solid fa-scale-balanced"></i> Justice Hub</span
         >
         <h1 class="text-white mb-6">
-          <span class="md:block">Advocates for Justice and </span>
+          <span class="lg:block">Advocates for Justice and </span>
           <strong><i>Legal Excellence</i></strong>
         </h1>
-        <p class="text-white md:w-2/4 mx-auto">
+        <p class="text-white lg:w-2/4 mx-auto">
           Our mission is to serve as trusted allies, navigating the complexities
           of law with precision, integrity, and a passion for achieving justice.
           Count on us to stand by your side and deliver exceptional legal
           representation.
         </p>
-        <div class="btns md:flex items-center justify-center mt-10">
+        <div class="btns lg:flex items-center justify-center mt-10">
           <button
             type="button"
-            class="text-white mb:mb-0 mb-4 mx-3 border-2 border-darkblue bg-darkblue hover:bg-blue- font-medium text-sm px-6 py-4 text-center"
+            class="text-white lg:mb-0 mb-4 mx-3 hover:scale-105 border-2 border-darkblue bg-darkblue transition duration-300 ease-in-out transform hover:scale-105 font-medium text-sm px-6 py-4 text-center"
           >
             Get Free Legal Advice
           </button>
           <button
-            class="text-white border-2 border-white mx-3 hover:bg-blue- font-medium text-sm px-8 py-4 text-center"
+            class="text-white border-2 border-white mx-3 transition duration-300 ease-in-out transform hover:scale-105 font-medium text-sm px-8 py-4 text-center"
           >
             View Practice Area
           </button>
@@ -203,42 +228,46 @@
     </header>
 
     <!-- Records -->
-    <div id="OurRecord" class="md:py-28 py-16 bg-white">
+    <div id="OurRecord" class="2xl:py-28 2xl:py-16 lg:py-12 bg-white">
       <div class="max-w-screen-xl mx-auto">
         <div class="btns flex items-center justify-center">
           <button
             type="button"
-            class="text-white mx-3 border-2 border-darkblue bg-darkblue hover:bg-blue- font-medium text-sm md:px-8 md:py-4 p-2 text-center"
+            class="text-white mx-3 border-2 hover:scale-105 border-darkblue bg-darkblue transition duration-300 ease-in-out transform hover:scale-105 font-medium text-sm lg:px-8 lg:py-4 p-2 text-center"
           >
             Personal Injury
           </button>
           <button
-            class="btnGrey border-2 text-darkblue mx-3 hover:bg-blue- font-medium text-sm md:px-8 md:py-4 p-2 text-center"
+            class="btnGrey border-2 text-darkblue mx-3 transition duration-300 ease-in-out transform hover:scale-105 font-medium text-sm lg:px-8 lg:py-4 p-2 text-center"
           >
             Criminal Defense
           </button>
         </div>
         <div
-          class="records_content mt-16 flex md:justify-between justify-center items-center flex-wrap"
+          class="records_content mt-16 flex lg:justify-between justify-center items-center flex-wrap"
         >
-          <div class="record_box text-center md:text-left md:mb-0 mb-12">
-            <h2>$4.2 Million</h2>
+          <div class="record_box text-center lg:text-left lg:mb-0 mb-12">
+            <h2 class="amount">$4.2 Million</h2>
             <p>Truck Accident</p>
           </div>
-          <div class="record_box text-center md:text-left md:mb-0 mb-12">
-            <h2>$4.2 Million</h2>
-            <p>Truck Accident</p>
+          <div class="record_box text-center lg:text-left lg:mb-0 mb-12">
+            <h2 class="amount">$2.3 Million</h2>
+            <p>Motor Vehicle Accident</p>
           </div>
-          <div class="record_box text-center md:text-left md:mb-0 mb-12">
-            <h2>$4.2 Million</h2>
-            <p>Truck Accident</p>
+          <div class="record_box text-center lg:text-left lg:mb-0 mb-12">
+            <h2 class="amount">$1.9 Million</h2>
+            <p>Ride-Share Accident</p>
           </div>
-          <div class="record_box text-center md:text-left md:mb-0 mb-12">
-            <h2>$4.2 Million</h2>
-            <p>Truck Accident</p>
+          <div class="record_box text-center lg:text-left lg:mb-0 mb-12">
+            <h2 class="amount">$1.7 Million</h2>
+            <p>Motor Vehicle Accident</p>
+          </div>
+          <div class="record_box text-center lg:text-left lg:mb-0 mb-12">
+            <h2 class="amount">$1.4 Million</h2>
+            <p>Pedestrian Accident</p>
           </div>
         </div>
-        <p class="md:mt-12 text-center text-sm italic text-slate-400">
+        <p class="lg:mt-12 text-center text-sm italic text-slate-400">
           *Please note that outcomes can vary based on the unique facts and
           legal circumstances of each case.
         </p>
@@ -248,11 +277,11 @@
     <!-- about us section -->
     <div id="aboutUs" class="pt-24">
       <div class="max-w-screen-xl mx-auto">
-        <div class="md:columns-2 items-center justify-between">
-          <div class="md:pr-12">
+        <div class="lg:columns-2 items-center justify-between">
+          <div class="lg:pr-12">
             <img src="assets/person.png" alt="person" />
           </div>
-          <div class="aboutUsText pb-6 md:pb-0 md:pl-12 pt-8 md:pt-24">
+          <div class="aboutUsText pb-6 lg:pb-0 lg:pl-12 pt-8 lg:pt-24">
             <span class="text-white secondary_heading"
               ><i class="fa-solid fa-scale-balanced"></i> Justice Hub</span
             >
@@ -275,7 +304,7 @@
             </p>
             <button
               type="button"
-              class="text-white border-2 border-darkblue bg-darkblue hover:bg-blue- font-medium text-sm px-6 py-4 text-center"
+              class="text-white border-2 border-darkblue bg-darkblue transition duration-300 ease-in-out transform hover:scale-105 font-medium text-sm px-6 py-4 text-center hover:scale-105"
             >
               Learn More About Perry Grimaldi
             </button>
@@ -287,7 +316,7 @@
     <!-- services section start from here -->
     <div id="services" class="pt-24">
       <div class="max-w-screen-xl mx-auto">
-        <div class="text_content md:columns-2">
+        <div class="text_content lg:columns-2">
           <div>
             <span class="text-darkblue secondary_heading"
               ><i class="fa-solid fa-scale-balanced"></i> Justice Hub</span
@@ -312,7 +341,7 @@
         <div class="case_types">
           <div class="md:columns-3">
             <div
-              class="case_card mb-8 md:mb-0 relative"
+              class="case_card mb-8 lg:mb-0 relative"
               style="
                 background-image: url(assets/business-people-discussing-cafe.png);
               "
@@ -342,18 +371,13 @@
               </div>
             </div>
             <div
-              class="case_card mb-8 md:mb-0 relative"
+              class="case_card mb-8 lg:mb-0 relative"
               style="
                 background-image: url(assets/business-people-discussing-cafe.png);
               "
             >
-              <!-- <img
-                src="assets/business-people-discussing-cafe (1) 1.png"
-                alt="case"
-                class="w-full"
-              /> -->
               <div class="case_text p-6">
-                <img src="assets/ic.png" alt="icon" />
+                <img src="assets/ic-2.png" alt="icon" />
                 <h3 class="text-white fw-bold mt-6 mb-2">Personal Injury</h3>
                 <p class="text-white mb-4">
                   Seeking Justice and Fair Compensation for Your Suffering. Our
@@ -372,18 +396,13 @@
               </div>
             </div>
             <div
-              class="case_card mb-8 md:mb-0 relative"
+              class="case_card mb-8 lg:mb-0 relative"
               style="
                 background-image: url(assets/business-people-discussing-cafe.png);
               "
             >
-              <!-- <img
-                src="assets/business-people-discussing-cafe (1) 1.png"
-                alt="case"
-                class="w-full"
-              /> -->
               <div class="case_text p-6">
-                <img src="assets/ic.png" alt="icon" />
+                <img src="assets/ic-3.png" alt="icon" />
                 <h3 class="text-white fw-bold mt-6 mb-2">Personal Injury</h3>
                 <p class="text-white mb-4">
                   Seeking Justice and Fair Compensation for Your Suffering. Our
@@ -407,9 +426,9 @@
     </div>
 
     <!-- consultation -->
-    <div id="consultation" class="md:pt-56 py-12 md:pb-24">
+    <div id="consultation" class="2xl:pt-56 lg:pt-36 py-12 2xl:pb-24 lg:pb-12">
       <div class="max-w-screen-xl mx-auto">
-        <div class="text_content text-center md:text-left md:columns-2">
+        <div class="text_content text-center lg:text-left lg:columns-2">
           <div>
             <span class="text-white secondary_heading"
               ><i class="fa-solid fa-scale-balanced"></i> Justice Hub</span
@@ -419,15 +438,15 @@
             </h2>
           </div>
           <div>
-            <div class="btns flex items-center justify-center md:mt-10">
+            <div class="btns flex items-center justify-center lg:mt-10">
               <button
                 type="button"
-                class="text-white mx-3 border-2 border-darkblue bg-darkblue hover:bg-blue- font-medium text-sm md:px-6 md:py-4 p-3 text-center"
+                class="text-white mx-3 border-2 hover:scale-105 border-darkblue bg-darkblue transition duration-300 ease-in-out transform hover:scale-105 font-medium text-sm lg:px-6 lg:py-4 p-3 text-center"
               >
                 <i class="fa-solid fa-phone-volume"></i> 312.388.0808
               </button>
               <button
-                class="text-white border-2 border-white mx-3 hover:bg-blue- font-medium text-sm md:px-6 md:py-4 p-3 text-center"
+                class="text-white border-2 border-white mx-3 transition duration-300 ease-in-out transform hover:scale-105 font-medium text-sm lg:px-6 lg:py-4 p-3 text-center"
               >
                 Free Consultation
               </button>
@@ -437,14 +456,14 @@
       </div>
     </div>
 
-    <div id="testimoial" class="md:pt-24 md:pb-56 py-12">
+    <div id="testimoial" class="lg:pt-24 lg:pb-56 py-12">
       <div class="max-w-screen-xl mx-auto">
         <div class="text_content text-center">
           <div>
             <span class="text-darkblue secondary_heading"
               ><i class="fa-solid fa-scale-balanced"></i> Client Stories</span
             >
-            <h2 class="section_heading my-4 md:w-1/2 mx-auto">
+            <h2 class="section_heading my-4 lg:w-1/2 mx-auto">
               Their Experience with Perry Grimaldi Law
             </h2>
           </div>
@@ -454,12 +473,12 @@
             <div class="feedback_bg relative">
               <img
                 src="/assets/feedback-bg.png"
-                class="ml-auto hidden md:block"
+                class="ml-auto hidden lg:block"
                 alt="feedback"
               />
               <img
                 src="/assets/mobile-video.png"
-                class="ml-auto block md:hidden"
+                class="ml-auto block lg:hidden"
                 alt="feedback"
               />
               <div class="containerr absolute">
@@ -738,29 +757,6 @@
                   <span class="hidden"></span>
                 </div>
               </div>
-              <!-- <div class="p-6 pb-12 rounded">
-                <img src="assets/quote-ic.png" alt="quote-ic" />
-                <q class="mt-4 block">
-                  I can't express how grateful I am to Perry Grimaldi and their
-                  team. Their unwavering dedication, legal expertise, and
-                  personal commitment to my case were simply outstanding. They
-                  went above and beyond to ensure the best possible outcome, and
-                  I couldn't have asked for better legal representation. I
-                  highly recommend Perry Grimaldi Law to anyone in need of
-                  exceptional legal services.
-                </q>
-                <div class="flex items-center mt-4 space-x-4">
-                  <img
-                    src="https://source.unsplash.com/50x50/?portrait?1"
-                    alt=""
-                    class="w-12 h-12 bg-center bg-cover rounded-full"
-                  />
-                  <div>
-                    <p class="text-lg font-semibold">Leroy Jenkins</p>
-                    <p class="text-sm">CTO of Company Co.</p>
-                  </div>
-                </div>
-              </div> -->
             </div>
           </div>
         </div>
@@ -768,7 +764,7 @@
     </div>
 
     <!-- actnow -->
-    <div id="actnow" class="md:py-24 py-16 pb-24">
+    <div id="actnow" class="lg:py-24 py-16 pb-24">
       <div class="max-w-screen-xl mx-auto">
         <div class="text_content text-center">
           <div>
@@ -778,13 +774,13 @@
             <h2 class="text-white section_heading my-3">
               Unlock Your Legal Solutions Now
             </h2>
-            <p class="section_para text-white md:w-1/2 mx-auto mb-4">
+            <p class="section_para text-white lg:w-1/2 mx-auto mb-4">
               Let us unlock the possibilities for resolution, offering
               expertise, support, and a pathway toward favorable outcomes in
               your legal journey.
             </p>
             <button
-              class="text-white border-2 border-white mx-3 hover:bg-blue- font-medium text-sm px-8 py-4 text-center"
+              class="text-white border-2 border-white mx-3 transition duration-300 ease-in-out transform hover:scale-105 font-medium text-sm px-8 py-4 text-center"
             >
               Contact Now
             </button>
@@ -796,9 +792,9 @@
     <!-- map -->
     <div id="geographic" class="pb-24">
       <div class="max-w-screen-xl mx-auto">
-        <div class="md:pr-16 pt-8 md:pt-24">
-          <div class="md:columns-2">
-            <div class="text md:mb-0 mb-6">
+        <div class="lg:pr-16 pt-8 lg:pt-24">
+          <div class="lg:columns-2">
+            <div class="text lg:mb-0 mb-6">
               <span class="text-darkblue secondary_heading"
                 ><i class="fa-solid fa-scale-balanced"></i> Our Geographic
                 Reach</span
@@ -835,13 +831,13 @@
     <footer class="pt-24">
       <div class="max-w-screen-xl mx-auto">
         <div
-          class="flex md:flex-row flex-col-reverse justify-between items-center pb-16"
+          class="flex lg:flex-row flex-col-reverse justify-between items-center pb-16"
         >
           <div
-            class="footer_text mt-12 md:mt-0 md:text-left text-center text-white md:w-1/2"
+            class="footer_text mt-12 lg:mt-0 lg:text-left text-center text-white lg:w-1/2"
           >
             <div
-              class="logo mb-6 pb-6 w-fit border-b mx-auto md:mx-0 border-b-gray-500 border-darkblue"
+              class="logo mb-6 pb-6 w-fit border-b mx-auto lg:mx-0 border-b-gray-500 border-darkblue"
             >
               <img src="assets/footer-logo .png" alt="logo" />
             </div>
@@ -853,13 +849,13 @@
             </p>
             <p class="mb-3">perry#perrygrimaldi.com</p>
             <div class="links mt-5">
-              <a href="#" class="mr-3 pr-3 md:border-r border-r-gray-400"
+              <a href="#" class="mr-3 pr-3 lg:border-r border-r-gray-400"
                 >Make Payment</a
               >
-              <a href="#" class="mr-3 pr-3 md:border-r border-r-gray-400"
+              <a href="#" class="mr-3 pr-3 lg:border-r border-r-gray-400"
                 >Blog</a
               >
-              <a href="#" class="mr-3 pr-3 md:border-r border-r-gray-400"
+              <a href="#" class="mr-3 pr-3 lg:border-r border-r-gray-400"
                 >Area Served</a
               >
               <a href="#" class="mr-3 pr-3">Contact Us</a>
@@ -876,12 +872,12 @@
               ></a>
             </div>
           </div>
-          <div style="background-color: #2b2b2b" class="md:w-1/2">
+          <div style="background-color: #2b2b2b" class="lg:w-1/2">
             <div class="p-6">
               <p class="text-white mb-6">
                 Schedule a Free & Confidential Consultation
               </p>
-              <form action="#">
+              <form action="#" id="PGLaw-Contact">
                 <div>
                   <input
                     type="email"
@@ -931,7 +927,10 @@
       <p class="text-center text-white py-4 border-t border-t-grey">
         © <b>PERRY GRIMALDI</b> 2023 ALL RIGHTS RESERVED.
       </p>
+
+      <!-- Back to top button -->
     </footer>
+    <a id="button"></a>
 
     <!-- custom JS -->
     <script src="js/main.js"></script>
@@ -961,8 +960,68 @@
         },
         on: {
           autoplayTimeLeft(s, time, progress) {
-            progressCircle.style.setProperty("--progress", 1 - progress);
-            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+            const progressTime = Math.ceil(time / 1000);
+            progressContent.textContent = `${progressTime}s`;
+
+            const activeBullet = document.querySelector(
+              ".swiper-pagination-bullet-active"
+            );
+            const svg = activeBullet.querySelector("svg");
+
+            if (svg) {
+              const circle = svg.querySelector("circle");
+              const circumference = 2 * Math.PI * circle.getAttribute("r");
+              const offset = circumference * (1 - progress);
+              circle.style.strokeDasharray = `${circumference}`;
+              circle.style.strokeDashoffset = offset;
+            }
+          },
+          slideChange(s) {
+            // Remove SVG from all bullets
+            const allBullets = document.querySelectorAll(
+              ".swiper-pagination-bullet"
+            );
+            allBullets.forEach((bullet) => {
+              const svg = bullet.querySelector("svg");
+              if (svg) {
+                bullet.removeChild(svg);
+              }
+            });
+
+            // Add SVG to active bullet
+            const activeBullet = document.querySelector(
+              ".swiper-pagination-bullet-active"
+            );
+            const svg = document.createElementNS(
+              "http://www.w3.org/2000/svg",
+              "svg"
+            );
+            svg.setAttribute("viewBox", "0 0 48 48");
+            const circle = document.createElementNS(
+              "http://www.w3.org/2000/svg",
+              "circle"
+            );
+            circle.setAttribute("cx", "24");
+            circle.setAttribute("cy", "24");
+            circle.setAttribute("r", "20");
+            circle.setAttribute("stroke-dasharray", "100");
+            circle.setAttribute("stroke-dashoffset", "0");
+            circle.setAttribute("stroke", "#0a3c5e");
+            circle.setAttribute("stroke-width", "4");
+            circle.setAttribute("fill", "none");
+
+            const dot = document.createElementNS(
+              "http://www.w3.org/2000/svg",
+              "circle"
+            );
+            dot.setAttribute("cx", "24");
+            dot.setAttribute("cy", "24");
+            dot.setAttribute("r", "12");
+            dot.setAttribute("fill", "#0a3c5e");
+
+            svg.appendChild(circle);
+            svg.appendChild(dot);
+            activeBullet.appendChild(svg);
           },
         },
       });
