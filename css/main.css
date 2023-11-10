@@ -385,6 +385,10 @@ footer {
   background-size: cover;
 }
 
+footer p {
+  opacity: 0.9;
+}
+
 .footer_text h2 {
   font-size: 36px;
 }

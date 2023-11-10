@@ -56,4 +56,15 @@
     background-image: url(../assets/acknow-mobile.png);
     transform: translateY(-5%);
   }
+
+  footer .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer .links a {
+    width: 35%;
+    margin-bottom: 8px;
+  }
 }
