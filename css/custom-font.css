@@ -2,47 +2,51 @@
 /* Futura Medium Italic */
 @font-face {
   font-family: "FuturaMediumItalicBT";
-  src: url("font/Futura-Md-BT-Font/FuturaMediumItalicBT.ttf") format("truetype");
+  src: url("../assets/font/Futura-Md-BT-Font/FuturaMediumItalicBT.ttf")
+    format("truetype");
 }
 
 /* Futura Medium */
 @font-face {
   font-family: "FuturaMediumBT";
-  src: url("font/Futura-Md-BT-Font/FuturaMediumBT.ttf") format("truetype");
+  src: url("../assets/font/Futura-Md-BT-Font/FuturaMediumBT.ttf")
+    format("truetype");
 }
 
 /* Futura Bold Italic */
 @font-face {
   font-family: "FuturaBoldItalicBT";
-  src: url("font/Futura-Md-BT-Font/FuturaBoldItalicBT.ttf") format("truetype");
+  src: url("../assets/font/Futura-Md-BT-Font/FuturaBoldItalicBT.ttf")
+    format("truetype");
 }
 
 /* Futura Bold */
 @font-face {
   font-family: "FuturaBoldBT";
-  src: url("font/Futura-Md-BT-Font/FuturaBoldBT.ttf") format("truetype");
+  src: url("../assets/font/Futura-Md-BT-Font/FuturaBoldBT.ttf")
+    format("truetype");
 }
 
 /* Futura Medium Italic (alternative) */
 @font-face {
   font-family: "FutuMdIt";
-  src: url("font/Futura-Md-BT-Font/FutuMdIt.ttf") format("truetype");
+  src: url("../assets/font/Futura-Md-BT-Font/FutuMdIt.ttf") format("truetype");
 }
 
 /* Futura Medium (alternative) */
 @font-face {
   font-family: "FutuMd";
-  src: url("font/Futura-Md-BT-Font/FutuMd.ttf") format("truetype");
+  src: url("../assets/font/Futura-Md-BT-Font/FutuMd.ttf") format("truetype");
 }
 
 /* Futura Bold Italic (alternative) */
 @font-face {
   font-family: "FutuBdIt";
-  src: url("font/Futura-Md-BT-Font/FutuBdIt.ttf") format("truetype");
+  src: url("../assets/font/Futura-Md-BT-Font/FutuBdIt.ttf") format("truetype");
 }
 
 /* Futura Bold (alternative) */
 @font-face {
   font-family: "FutuBd";
-  src: url("font/Futura-Md-BT-Font/FutuBd.ttf") format("truetype");
+  src: url("../assets/font/Futura-Md-BT-Font/FutuBd.ttf") format("truetype");
 }
